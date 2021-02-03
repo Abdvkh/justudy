@@ -1,0 +1,15 @@
+.btn {
+  text-transform: uppercase;
+  height: 50px;
+  width: 200px;
+  background-color: $color__green;
+  border: 0;
+  color: $color__light;
+  font-size: larger;
+  grid-column: 4/10;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color__dark;
+  }
+}

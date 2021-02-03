@@ -1,0 +1,13 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: $color__light;
+  color: $color__darker;
+  box-sizing: border-box;
+}
+
+body, main, nav, section, ul, p, h3 {
+  margin: 0;
+  padding: 0;
+}

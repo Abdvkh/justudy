@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>Just Study, the others up to us | JUSTUDY</title>
+
+    <link rel="stylesheet" href="styles/scss/main.css">
+    <link rel="stylesheet" href="styles/tingle.css">
+</head>
+<body>
+<div class="app">
+    <main>
+        <nav>
+            <h1 class="brand">JUSTUDY</h1>
+            <img src="assets/images/menu.svg" alt="Navbar toggler" onclick="showNavLinks()">
+            <section id="navigation" class="nav">
+                <ul class="nav-links">
+                    <li>
+                        <a href="#who">Кто мы?</a>
+                    </li>
+                    <li>
+                        <a href="#offer">Что мы предлагаем</a>
+                    </li>
+                    <li>
+                        <a href="#news-and-posts">Новости / Недавние посты</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Контакты</a>
+                    </li>
+                </ul>
+                <button class="btn" data-target="request-modal" data-toggle="modal" onclick="showRequestForm()">Оставить заявку</button>
+            </section>
+        </nav>
+        <section id="welcome">
+            <img class="welcome-img" src="assets/images/girl-sitting-on-books-with-laptop-by-oblik-studio.svg" alt="Girl sitting on books and working on laptop">
+            <p class="lead">Вы абитуриент или человек ищящий место учёбы, но не имеете ни опыта, ни желания и времени на поиски и документацию?</p>
+            <p class="lead">Предоставьте это нам</p>
+            <button class="btn" onclick="showRequestForm()">оставить заявку</button>
+            <a class="next-section-btn" href="#who">
+                <p>дальше</p>
+                <img class="arrow" src="assets/images/down-chevron.svg" alt="Down arrow">
+            </a>
+        </section>
+        <section id="who">
+            <h1 class="heading">Кто мы?</h1>
+            <img src="assets/images/team-at-work_solid.svg" alt="Team at work">
+            <p class="lead">Мы команда специалистов представляющее консалтинговое агенство в сфере высшего образования</p>
+        </section>
+        <section id="who-2">
+            <h1 class="heading">Кто мы?</h1>
+            <img src="assets/images/team_solid.svg" alt="About us">
+            <p class="lead">Имеем опыт больше двух лет, и уже помогли более 40 абитуриентам из более двух городов Узбекистана на основе бюджетных и конктрактных основ</p>
+        </section>
+        <section id="offer">
+            <h1 class="heading">Что мы предлагаем</h1>
+            <img src="assets/images/workspace_solid.svg" alt="Workspace">
+            <p class="lead">Мы предоставляем все необходимые сервисы от нахождения информации до поступления в университет, с возможностью поддержки клиента 24/7 в любых случаех исходя из договорённости</p>
+        </section>
+        <section id="services">
+            <ul class="grid">
+                <li>
+                    <img src="assets/images/girl-sitiing-on-table-conducting-an-interview-by-oblik-studio.svg" alt="Встреча и обсуждение интересов и предпочтений кандидата">
+                    <p><strong>Встреча и обсуждение</strong> интересов и предпочтений кандидата</p>
+                </li>
+                <li>
+                    <img src="assets/images/laptop-job-boards-by-oblik-studio.svg" alt="Поиск необходимой информации связанных с запросами кандидата">
+                    <p><strong>Поиск необходимой</strong> информации связанных с запросами кандидата</p>
+                </li>
+                <li>
+                    <img src="assets/images/slack-trello-screens-by-oblik-studio.svg" alt="Детальная информация об универитете и направления со статистикой">
+                    <p><strong>Детальная информация</strong> об универитете и направления со статистикой</p>
+                </li>
+                <li>
+                    <img src="assets/images/planning-sheets-of-paper-coffee-by-oblik-studio.svg" alt="Подготовка документов, создание персональных кабинетов/эл. почты, и т.д.">
+                    <p><strong>Подготовка документов</strong>, создание персональных кабинетов/эл. почты, и т.д.</p>
+                </li>
+                <li>
+                    <img src="assets/images/desktop-video-chat-coffee-by-oblik-studio.svg" alt="Проведение и организация онлайн/оффлайн экзаменов и встреч">
+                    <p><strong>Проведение и организация</strong> онлайн/оффлайн экзаменов и встреч</p>
+                </li>
+                <li>
+                    <img src="assets/images/books-by-oblik-studio.svg" alt="Предоставление книг/материалов для подготовки к процессу ">
+                    <p><strong>Предоставление</strong> книг/материалов для подготовки к процессу </p>
+                </li>
+                <li>
+                    <img src="assets/images/podcasts-equipment-by-oblik-studio.svg" alt="Организация и проведение встреч с людьми которые уже имели опыт">
+                    <p><strong>Организация и проведение</strong> встреч с людьми которые уже имели опыт</p>
+                </li>
+                <li>
+                    <img src="assets/images/letters-paperplanes-messages-by-oblik-studio.svg" alt="Помощь при работе с документами и коммуникации с представителями">
+                    <p><strong>Помощь при работе</strong> с документами и коммуникации с представителями</p>
+                </li>
+            </ul>
+        </section>
+        <section id="news-and-posts">
+            <h1 class="heading">Новости / Недавние посты</h1>
+            <section id="posts">
+                <section class="post">
+                    <img src="assets/images/book-right-and-wrong-by-oblik-studio.svg" alt="Опубликованы результаты DT...">
+                    <h3>Опубликованы результаты DT...</h3>
+                    <p>Государственный центр тестирования опубликовал результаты тесов на поступление в университеты 2022 года. По итогам выяснилось...</p>
+                    <button class="btn color-primary">подробнее</button>
+                </section>
+                <section class="post">
+                    <img src="assets/images/book-right-and-wrong-by-oblik-studio.svg" alt="Опубликованы результаты DT...">
+                    <h3>Опубликованы результаты DT...</h3>
+                    <p>Государственный центр тестирования опубликовал результаты тесов на поступление в университеты 2022 года. По итогам выяснилось...</p>
+                    <button class="btn color-primary">подробнее</button>
+                </section>
+                <section class="post">
+                    <img src="assets/images/book-right-and-wrong-by-oblik-studio.svg" alt="Опубликованы результаты DT...">
+                    <h3>Опубликованы результаты DT...</h3>
+                    <p>Государственный центр тестирования опубликовал результаты тесов на поступление в университеты 2022 года. По итогам выяснилось...</p>
+                    <button class="btn color-primary">подробнее</button>
+                </section>
+            </section>
+            <ul class="pagination">
+                <li><a href="#"><</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">></a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <section id="contact">
+            <h3>Контакты</h3>
+            <div class="numbers">
+                <h4>Номера:</h4>
+                <ul>
+                    <li>+998 90 123 45 67</li>
+                </ul>
+            </div>
+            <div class="locations">
+                <h4>Локации:</h4>
+                <ul>
+                    <li>110200, Узбекистан, г. Ангрен, ул. Чыкризова</li>
+                </ul>
+            </div>
+            <div class="emails">
+                <h4>Эл. почта:</h4>
+                <ul>
+                    <li>support@justudy.uz</li>
+                    <li>info@justudy.uz</li>
+                </ul>
+            </div>
+        </section>
+        <section id="social">
+            <h2>Мы в соц. сетях</h2>
+            <img src="assets/images/telegram.svg" alt="Telegram">
+            <img src="assets/images/instagram.svg" alt="Instagram">
+            <img src="assets/images/youtube.svg" alt="YouTube">
+        </section>
+        <p class="copyright">2021 © JUSTUDY<br>Все права защищены</p>
+        <p class="vakhid">Дизайн и разработка <a href="https://vakhid.digital">Vakhid Digital</a></p>
+    </footer>
+</div>
+
+<script src="js/tingle.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+#services {
+  margin: 10px auto;
+
+  li {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    border-color: $color__dark;
+    border-bottom: 1px solid;
+
+    &:nth-child(odd){
+      grid-column: span 6;
+      border-right: 1px solid;
+    }
+    &:nth-child(even){
+      grid-column: span 6;
+    }
+    &:nth-last-child(1){
+      border-bottom-style: none;
+    }
+    &:nth-last-child(2){
+      border-bottom-style: none;
+    }
+    img {
+      margin: 10px auto;
+      width: 120px;
+      height: auto;
+    }
+
+    p {
+      margin: 0 auto;
+      width: 90%;
+      height: auto;
+    }
+  }
+}

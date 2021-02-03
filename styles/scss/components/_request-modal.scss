@@ -1,0 +1,35 @@
+.modal {
+  text-align: center;
+  .request-modal-image {
+    width: 40%;
+    height: auto;
+  }
+  .request-modal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    input {
+      width: 90%;
+      height: 44px;
+      border: 3px solid $color__darker;
+
+      &::placeholder{
+        opacity: 20%;
+        font-family: "Cuprum", sans-serif;
+        font-size: 2em;
+      }
+    }
+    textarea {
+      border: 3px solid $color__darker;
+      width: 90%;
+      &::placeholder{
+        opacity: 20%;
+        font-family: "Cuprum", sans-serif;
+        font-size: 2em;
+      }
+    }
+    button {
+      margin: 0 auto;
+    }
+  }
+}

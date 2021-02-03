@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&family=Cuprum&display=swap');
+
+body {
+  font-family: 'Cuprum', sans-serif;
+}
+
+.brand {
+  font-family: 'Bellefair', serif;
+  text-decoration: none;
+  font-weight: initial;
+}
+section {
+  text-align: center;
+}
+.heading {
+  font-size: 3em;
+}
+.lead {
+  font-size: 1.8em;
+}
+#welcome {
+  a {
+    font-size: 0.5em;
+    text-transform: uppercase;
+    text-decoration: none;
+    &:visited {
+      color: inherit;
+    }
+    &:hover {
+      color: $color__green;
+    }
+  }
+}
+#services {
+  text-align: center;
+  p {
+    color: $color__green;
+  }
+}
+footer {
+  h3 {
+    font-size: 2em;
+  }
+  h4 {
+    font-size: 1.5em;
+  }
+  font-size: 1.125em;
+  text-align: left;
+}

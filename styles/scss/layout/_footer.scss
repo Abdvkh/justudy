@@ -1,0 +1,59 @@
+footer{
+  text-align: center;
+
+  display: block;
+  justify-self: end;
+  height: 100vh;
+
+  color: $color__light;
+  background-color: $color__darker;
+
+  img {
+    width: 10%;
+  }
+
+  #contact {
+    padding-left: 20px;
+    ul {
+      text-align: left;
+      list-style-type: none;
+    }
+    h3 {
+      padding: 20px 0;
+    }
+    h4 {
+      text-align: left;
+    }
+  }
+  #social {
+    padding-top: 10px;
+    img {
+      color: $color__light;
+      width: 64px;
+      height: 64px;
+      padding: 20px;
+      padding-right: 3em;
+      filter: invert(100%);
+
+      &:hover {
+        filter: saturate(50%);
+      }
+    }
+  }
+  .copyright {
+    padding-top: 40px;
+  }
+  .vakhid {
+    padding-top: 60px;
+    a {
+      color: $color__green;
+      text-decoration: underline;
+      &:visited {
+        color: $color__green;
+      }
+      &:hover {
+        color: $color__dark;
+      }
+    }
+  }
+}

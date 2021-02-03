@@ -1,0 +1,63 @@
+nav {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 20px 10px;
+
+  .nav {
+    width: 375px;
+    height: 400px;
+    display: none;
+  }
+  .show {
+    display: contents;
+    background-color: $color__light;
+  }
+  ul {
+    grid-column: 1/12;
+    line-height: 2;
+    display: grid;
+    padding-left: 30px;
+  }
+  li {
+    grid-column: 1/12;
+    list-style: none;
+
+    a {
+      float: left;
+      display: block;
+      color: $color__darker;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+
+
+      &:hover, .active {
+        text-decoration: underline;
+      }
+
+      @media screen and (max-width: 920px) {
+        &:not(:first-child) {display: none;}
+      }
+    }
+  }
+  h1 {
+    grid-column: 2/10;
+  }
+  img {
+    margin: 15px 0;
+    grid-column: 11/12;
+    width: 80%;
+    cursor: pointer;
+    @media screen and (min-width: 920px){
+      display: none;
+    }
+  }
+  button {
+    margin: 0 auto;
+    grid-column: 2/4;
+  }
+
+  @media screen and (min-width: 920px) {
+  }
+}

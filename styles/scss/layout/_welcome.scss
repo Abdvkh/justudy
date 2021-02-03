@@ -1,0 +1,32 @@
+#welcome {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  button {
+    margin: 10px auto;
+  }
+  img.arrow {
+    margin: 0;
+    padding: 0;
+    width: 5%;
+    height: auto;
+  }
+  img.welcome-img {
+    margin: 30px 0;
+    height: 300px;
+    width: auto;
+  }
+  p {
+    margin: 20px auto 0;
+    width: 317px;
+    height: auto;
+  }
+  a {
+    margin: 10px auto 0;
+  }
+
+  @media screen and (min-width: 920px){
+
+  }
+}
