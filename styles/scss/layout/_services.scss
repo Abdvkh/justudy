@@ -36,3 +36,11 @@
     }
   }
 }
+
+@media screen and (min-width: 920px) {
+  #services {
+    display: grid;
+    height: 100%;
+    padding-left: 25%;
+  }
+}

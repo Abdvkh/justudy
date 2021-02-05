@@ -57,7 +57,26 @@ nav {
     margin: 0 auto;
     grid-column: 2/4;
   }
+}
 
-  @media screen and (min-width: 920px) {
+@media screen and (min-width: 920px) {
+  nav {
+    display: inline;
+    position: sticky;
+    float: left;
+    top: 0;
+    left: 2%;
+    width: 25%;
+
+    ul {
+      margin-top: 40vh;
+      padding-left: 0;
+    }
+    .nav {
+      display: contents;
+    }
+    button {
+      margin: 0;
+    }
   }
 }

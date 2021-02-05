@@ -12,7 +12,7 @@
     height: auto;
   }
   .lead {
-    margin: 70px auto 30px;
+    margin: 40px auto 30px;
     width: 60%;
     height: auto;
     font-size: 2rem;
@@ -30,5 +30,52 @@
     margin: 50px auto 30px;
     width: 300px;
     height: auto;
+  }
+}
+
+@media screen and (min-width: 920px){
+  #who {
+    display: grid;
+    padding-left: 25%;
+    padding-bottom: 20px;
+
+    button {
+      display: none;
+    }
+    .heading {
+      display: block;
+      grid-column: span 12;
+      padding: 0;
+    }
+    img {
+      height: auto;
+      width: 600px;
+      grid-column: span 6;
+    }
+    .lead {
+      padding: 0;
+      grid-column: span 6;
+    }
+  }
+
+  #who-2 {
+    display: grid;
+    height: 100vh;
+    padding-left: 25%;
+
+    .heading {
+      display: block;
+      grid-column: span 12;
+      padding: 0;
+    }
+    img {
+      height: auto;
+      width: 600px;
+      grid-column: span 6;
+    }
+    .lead {
+      padding: 0;
+      grid-column: span 6;
+    }
   }
 }

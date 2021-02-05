@@ -19,3 +19,28 @@
     height: auto;
   }
 }
+
+@media screen and (min-width: 920px) {
+  #offer {
+    display: grid;
+    height: 100vh;
+    padding-left: 25%;
+
+    .heading {
+      display: block;
+      grid-column: span 12;
+      padding: 0;
+    }
+
+    img {
+      height: auto;
+      width: 600px;
+      grid-column: span 6;
+    }
+
+    .lead {
+      padding: 30px 0 0;
+      grid-column: span 6;
+    }
+  }
+}

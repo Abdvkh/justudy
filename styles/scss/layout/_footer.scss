@@ -57,3 +57,34 @@ footer{
     }
   }
 }
+
+@media screen and (min-width: 920px) {
+  footer {
+    display: grid;
+    height: 100%;
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-bottom: 1%;
+
+    #contact {
+      display: inline;
+      grid-column: span 6;
+      grid-row: 1;
+      text-align: left;
+    }
+    #socials {
+      display: inline;
+      grid-column: span 6;
+      grid-row: 1;
+      text-align: right;
+    }
+    .copyright {
+      grid-column: span 12;
+      grid-row: 2;
+    }
+    .vakhid {
+      grid-column: span 12;
+      grid-row: 3;
+    }
+  }
+}

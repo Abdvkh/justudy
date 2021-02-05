@@ -26,7 +26,28 @@
     margin: 10px auto 0;
   }
 
-  @media screen and (min-width: 920px){
+}
 
+@media screen and (min-width: 920px){
+  #welcome {
+    display: grid;
+    button {
+      display: none;
+    }
+    img.welcome-img {
+      height: 600px;
+      width: auto;
+      grid-column: 7/12;
+      grid-row: 1;
+    }
+    .lead {
+      grid-column: 2/7;
+      grid-row: 1;
+      align-self: center;
+    }
+    .next-section-btn {
+      grid-column: span 12;
+      grid-row: 2;
+    }
   }
 }

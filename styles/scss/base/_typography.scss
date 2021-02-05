@@ -2,6 +2,7 @@
 
 body {
   font-family: 'Cuprum', sans-serif;
+  color: $color__darker;
 }
 
 .brand {
@@ -23,8 +24,8 @@ section {
     font-size: 0.5em;
     text-transform: uppercase;
     text-decoration: none;
-    &:visited {
-      color: inherit;
+    &:visited{
+      color: $color__darker;
     }
     &:hover {
       color: $color__green;
