@@ -81,7 +81,7 @@ footer h4 {
 #welcome {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
 }
 #welcome button {
   margin: 10px auto;
@@ -330,7 +330,7 @@ footer {
   text-align: center;
   display: block;
   justify-self: end;
-  height: 100vh;
+  height: 100%;
   color: #F7F1F1;
   background-color: #234568;
 }

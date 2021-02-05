@@ -41,3 +41,33 @@ const showRequestForm = () => {
 const closeModal = () => {
     modal.close();
 }
+
+/* Form handling */
+function sendFormFilling(e){
+    const formData = new FormData();
+    const name = document.getElementById('name');
+    const contacts = document.getElementById('contacts');
+    const message = document.getElementById('message');
+    let msg = 'Name: ' + name.value + '\n' +
+              'Contacts: ' + contacts.value + '\n' +
+              'Message: ' + message.value;
+
+    let url = "https://api.telegram.org/bot1622858568:AAFMsCtuNglEbw-I3BqLu0f7AxatNCM0S0U/sendMessage";
+
+    formData.append('text', msg);
+    formData.append('chat_id', 469750202);
+    formData.append('parse_mode', 'markdown');
+
+    e.preventDefault();
+
+
+    fetch(url, {
+        method: 'POST',
+        body: formData,
+    }).then(() => {
+        modal.close();
+    });
+};
+
+const request = document.querySelector('.request-modal-form')
+document.addEventListener('submit', sendFormFilling);
