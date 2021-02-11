@@ -131,7 +131,7 @@ footer h4 {
 }
 #who {
   background-color: #234568;
-  height: 100vh;
+  height: 100%;
   color: #F7F1F1;
 }
 #who img {
@@ -150,7 +150,7 @@ footer h4 {
 }
 
 #who-2 {
-  height: 100vh;
+  height: 100%;
 }
 #who-2 img {
   margin: 30px 0;
@@ -209,7 +209,7 @@ footer h4 {
 }
 #offer {
   background-color: #2E688B;
-  height: 100vh;
+  height: 100%;
   color: #F7F1F1;
 }
 #offer .heading {
